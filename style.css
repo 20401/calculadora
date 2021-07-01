@@ -34,7 +34,7 @@ button {
     cursor       : pointer;
     margin       : 5px;
     border-radius: 32px;
-    font-size    : 1, 5em;
+    font-size    : 2em;
     background   : rgb(13, 194, 124);
     box-shadow   : 10px 20px 10px -3px #00000040;
 }
@@ -43,8 +43,33 @@ button:active {
     background-color: rgb(34, 51, 45);
 }
 
-.display {
+/*ampliacion de botones mas grandes como el 0 y el C*/
+.col-2{
+    grid-column: span 2;
+}
+.display 
+{
     grid-column: 1 / -1;
     padding    : 15px;
     display: flex;
+    margin: 10px 10px 20px 10px;
+    flex-direction: column;
+    background-color: rgb(18, 19, 19);
+    align-items:flex-end;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: keep-all;
+    box-shadow: 0px 0px 0px 10px #00000040;
+
+}
+
+/*ampliacion resultados para una mejor vision */
+
+#valor-act{
+    font-size: 2em;
+    
+}
+#valor-ant{
+    font-size: 3em;
 }
