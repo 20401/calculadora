@@ -1,16 +1,29 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+    color      : whitesmoke;
 }
 
-body{
-    margin:0;
-    background-color: rgba(15, 43, 199, 0.637);
+body {
+    margin          : 0;
+    background-color: #225c9ece;
 }
-.contenedor{
-    display:flex;
+
+/*aqui se inicia a centrar el contenedor completo al centro */
+.container {
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    
-}s
+    align-items    : center;
+    height         : 100vh;
+
+}
+/*aqui se modifican los botones */
+.calculadora {
+    display:grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background: rgb(13, 194, 124);
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 20px 0px 5px #00000033;
+
+}
