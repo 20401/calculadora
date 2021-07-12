@@ -1,6 +1,11 @@
-let frutas = ["uvas","peras","borojo","aguacate"];
-let pc ={
-    pc= "skendapc"
-}
-document.write(frutas[2],frutas[1]) 
 
+for (let i = 1; i <= 5; i++) {
+ 
+    if (i == 4) {
+        continue;
+
+    }
+
+
+    document.write(i + "<br>");
+}

@@ -24,6 +24,7 @@ else if (dinerocofla >= 1.8 && dinerocofla < 2.9)
 else if (dinerocofla >= 2.9) {
     alert("cofla, comprate el helado de confeti o el pote de 1/4 kg");
     alert("y te sobran " + ( dinerocofla - 2.9));
+    
 }
 else {
     alert("cofla, papi siga derecho que esta heladria la hizo dracula ");
