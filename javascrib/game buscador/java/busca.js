@@ -3,7 +3,7 @@ const HEIGH = 500;
 
 
 let objetivo = { 
-    x: getRandonNumber(WIDTH),
-    y: getRandonNumber(HEIGH)
+    x: getRandomNumber(WIDTH),
+    y: getRandomNumber(HEIGH)
 }
 console.log(objetivo);
