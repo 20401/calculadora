@@ -1,5 +1,9 @@
-alert ("hapi fuma weeb");
-const width =500;
-const heigh =500;
+const WIDTH = 500;
+const HEIGH = 500;
 
 
+let objetivo = { 
+    x: getRandonNumber(WIDTH),
+    y: getRandonNumber(HEIGH)
+}
+console.log(objetivo);

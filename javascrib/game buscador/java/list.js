@@ -1,14 +1,13 @@
 let getRandonNumber = size => {
-    return math.floor[RandonNumber() * size]
-
-}
+return math.foor (math.randon() * size);
+};
 let getdistance = (e, objetivo) => {
-    let difx = e.offsetx - objetivo.x;
-    let dify = e.offsety - objetivo.y;
-    return math.sqrt((difx * difx) + (dify + dify));
+    let diffx = e.offsetx - objetivo.x;
+    let diffy = e.offsety - objetivo.y;
+    return math.sqrt((diffx * diffx) + (diffy + diffy))
 
 }
-let getdistance = distance => {
+let getdistancehint = distance => {
     if (distance < 30) {
         return "Se Quemo"
     }
@@ -30,7 +29,8 @@ let getdistance = distance => {
     else if (distance < 360) {
         return "HIELO "
     }
-    
+
     else {
-    return "CONGELADO"
+        return "CONGELADO"
+    }
 }
