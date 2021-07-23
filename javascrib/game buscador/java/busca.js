@@ -6,4 +6,7 @@ let objetivo = {
     x: getRandomNumber(WIDTH),
     y: getRandomNumber(HEIGH)
 }
-console.log(objetivo);
+let $lab = document.getElementId("lab");
+$lab.addeventlistener(click, funccion(){
+console log("click");
+}
