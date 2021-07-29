@@ -2,7 +2,7 @@
 let getRandomNumber = size => {
     return Math.floor(Math.random() * size);
 }
-
+let distance
 
 //selection de los 2 puntos el tesoro y el buscador//
 let getDistance = (e, objetivo) => {
@@ -12,22 +12,23 @@ let getDistance = (e, objetivo) => {
 
 }
 let getDistanceHint = distance => {
-    if (distance < 30) {
-        return "Se Quemo";
+    if (distance < 20) {
+        return "HAS encontrado a pepo"
+        
     }
-    else if (distance < 50) {
+    else if (distance < 40) {
         return "Muy Caliente";
     }
     else if (distance < 80) {
         return "Caliente";
     }
-    else if (distance < 100) {
+    else if (distance < 120) {
         return "Tibio";
     }
-    else if (distance < 130) {
+    else if (distance < 150) {
         return "frio";
     }
-    else if (distance < 180) {
+    else if (distance < 200) {
         return "Muy frio";
     }
     else if (distance < 360) {
