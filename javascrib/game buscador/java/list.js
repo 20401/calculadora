@@ -2,7 +2,7 @@
 let getRandomNumber = size => {
     return Math.floor(Math.random() * size);
 }
-let distance
+
 
 //selection de los 2 puntos el tesoro y el buscador//
 let getDistance = (e, objetivo) => {

@@ -9,14 +9,24 @@ let objetivo = {
 
 
 let $lab = document.getElementById("lab");
+let $distance = document.getElementById("distance");
 //let $distance = document.getDistancehint(distance); 
 
-$lab .addEventListener ("click", function(e) {
-     let distance = getDistance (e, objetivo)
-     let distanceHint = getDistanceHint(distance)
-//console.log(distanceHint)
-<h1>$distanceHint</h1>
-});
+$lab.addEventListener("click", function (e) {
+    let distance = getDistance(e, objetivo);
+    let distanceHint = getDistanceHint(distance);});
+    $distance.innerHTML = <h1>${distanceHint}</h1>;
+
+    //distance.innerHTML = distanceHint;
+
+    //$ distance.innerHTML = distanceHint;
+
+    // console.log(distanceHint);
+
+    // en esta secion se ubica el texto en html
+
+
+
 
 
 /*
