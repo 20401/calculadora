@@ -9,23 +9,35 @@ let objetivo = {
 
 
 let $lab = document.getElementById("lab");
-let $distance = document.getElementById("distance");
-//let $distance = document.getDistancehint(distance); 
+let clicks = 0;
+
+//e este ubico la fncion clicks y utilizo la funcion de pitagoras en listner
+
 
 $lab.addEventListener("click", function (e) {
     let distance = getDistance(e, objetivo);
-    let distanceHint = getDistanceHint(distance);});
-    $distance.innerHTML = <h1>${distanceHint}</h1>;
+    let distanceHint = getDistanceHint(distance);
+    clicks++;
 
-    //distance.innerHTML = distanceHint;
+    //se escribe el valor de la variable obtenida en el html
 
-    //$ distance.innerHTML = distanceHint;
+    let $distance = document.getElementById("distance");
+    $distance.innerHTML = `<h1>${distanceHint}</h1>`;
+
+    //se crea la condicion para la victoria y el reinicio del programa
+    if (distance < 20){
+        alert (`felicitaciones has encontrado a pepo y lo lograste en ${clicks}`
+        );
+    location.reload ();
+    }
+
+    //$ distance.innerHTML = distance;
 
     // console.log(distanceHint);
 
     // en esta secion se ubica el texto en html
 
-
+});
 
 
 
