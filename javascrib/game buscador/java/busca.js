@@ -26,7 +26,7 @@ $lab.addEventListener("click", function (e) {
 
     //se crea la condicion para la victoria y el reinicio del programa
     if (distance < 20){
-        alert (`felicitaciones has encontrado a pepo y lo lograste en ${clicks}`
+        alert (`felicitaciones has encontrado a pepo y lo lograste en ${clicks} clicks :)`
         );
     location.reload ();
     }
