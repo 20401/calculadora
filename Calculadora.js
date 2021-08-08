@@ -1,10 +1,19 @@
 // se realizan cualaculos desde las clases
 
-
-
-
-
-
+class Calculadora {
+    sumar(num1, num2) {
+        return num1 + num2;
+    }
+    restar(num1, num2) {
+        return num1 - num2;
+    } 
+    multiplicar(num1, num2) {
+        return num1 * num2;
+    } 
+    dividir(num1, num2) {
+        return num1 / num2;
+    }
+}
 
 
 
@@ -18,20 +27,20 @@
 
 
 
-// function myFunction(a, b) {
-//     return a * b;             // Function returns the product of a and b
-// }
-// function sumar(num1, num2) {
-//     return num1 + num2;
-// }
-// function restar(num1, num2) {
-//     return num1 - num2;
-// }
-// function multiplicar(num1, num2) {
-//     return num1 * num2;
-// }
-// function dividir(num1, num2) {
-//     return num1 / num2;
-// }
+function myFunction(a, b) {
+    return a * b;             // Function returns the product of a and b
+}
+function sumar(num1, num2) {
+    return num1 + num2;
+}
+function restar(num1, num2) {
+    return num1 - num2;
+}
+function multiplicar(num1, num2) {
+    return num1 * num2;
+}
+function dividir(num1, num2) {
+    return num1 / num2;
+}
 
 
