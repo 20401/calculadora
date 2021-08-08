@@ -1,16 +1,17 @@
-class display {
+class Display {
    consultor (displayValorActual,displayValorAnterior){
-       this.displayValorAnterior = displayValorAnterior;
-  this.displayValorActual =displayValorActual;
-  this.calculadora = new Calculadora();
-  this.valorActual = "";
-  this.valorAnterior = "";
+ this.displayValorAnterior = displayValorAnterior;
+  this.displayValorActual = displayValorActual;
+  this.calculador = new Calculadora();
+  this.valorActual = '';
+  this.valorAnterior = '';
     }
     agregarNumero(numero){
         this.valorActual = numero;
+        this.imprimirValores
     }
     imprimirValores(){
-        this.displayValorActual.textContener = this.valorActual;
-        this.displayValorAnterior.textContener = this.valorAnterior;
+        this.displayValorActual.textContent = this.valorActual;
+        this.displayValorAnterior.textContent = `${this.valorAnterior}`;
     }
 }
