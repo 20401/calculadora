@@ -17,12 +17,12 @@ body {
 
 }
 
-/*aqui se modifican los botones */
+/*aqui se modifican los fondo de la calculadora abarca tambien la pantalla */
 .calculadora {
     display              : grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows   : 160px repeat(5, 75px);
-    background           : rgb(13, 194, 124);
+    background           : rgba(228, 8, 8, 0.644);
     padding              : 15px;
     border-radius        : 32px;
     box-shadow           : 15px 20px 0px 5px #00000033;
@@ -35,10 +35,10 @@ button {
     margin       : 5px;
     border-radius: 32px;
     font-size    : 2em;
-    background   : rgb(13, 194, 124);
+    background   : rgba(194, 13, 13, 0.24);
     box-shadow   : 10px 20px 10px -3px #00000040;
 }
-
+/*tono oscuro al precionar el boton */
 button:active {
     background-color: rgb(34, 51, 45);
 }
@@ -47,6 +47,7 @@ button:active {
 .col-2{
     grid-column: span 2;
 }
+/*aqui esta la pantalla en la cual se escribirnan los numeros */
 .display 
 {
     grid-column: 1 / -1;
