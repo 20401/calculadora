@@ -3,9 +3,28 @@ class Display {
         this.displayValorAnterior = displayValorAnterior;
         this.displayValorActual = displayValorActual;
         this.calculador = new Calculadora();
+        this.tipoOperacion = undefined;
         this.valorActual = '';
         this.valorAnterior = '';
     }
+    // aqui se comienza a realizar los calculos de los toString
+calculo(){
+    const valorAnterior=  parseFloat(this.valorAnterior);
+const  valorActual=  parseFloat(this.displayValorAnterior);
+if (isNaN(valorActual)|| isNaN(valorAnterior)) return;
+this.valorActual= this.Calculador[this.tipoOperacion](valorAnterior, valorActual
+);
+} 
+
+// borrrrrrrrrrrar borrarTodo es la funcion utilizada para eliminar valores de la pantalla
+borrarTodo(){
+    this.valorActual ="";
+    this.valorAnterior = "";
+    this.tipoOperacion = undefined;
+    this.imprimirValores();
+}
+
+
     // se agrega el valor actual y se  concatena con le anterior 
     // se agrega la condicon para el punto que si no existe se ponga de lo contrario no se retorne
     agregarNumero(numero) {
