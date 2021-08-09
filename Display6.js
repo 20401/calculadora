@@ -8,18 +8,27 @@ class Display {
     }
     // se agrega el valor actual y se  concatena con le anterior 
     // se agrega la condicon para el punto que si no existe se ponga de lo contrario no se retorne
-    agregarNumero(numero) { 
-        if (numero=== '.' && this.valorActual.includes('.'))return
+    agregarNumero(numero) {
+        if (numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
         this.imprimirValores();
     }
-
-    //funcion mostrarlo la pantalla mustra los valores
-    imprimirValores() {
-        this.displayValorActual.textContent = this.valorActual;
-        this.displayValorAnterior.textContent = `${this.valorAnterior}${this.signos[this.tipoOperacion] || ''}`;
+    // borrar es la funcion de reducir un valor concatenado no
+    // dos notas importantes el valor slience elimina parte de los 
+    // string asi que hay que configurarle el parametro a borrrrrr
+    
+    borrar() {
+        this.valorActual = this.valorActual.toString().slice(0, -1);
+        this.imprimirValores();
     }
 
 
+        //funcion mostrarlo la pantalla mustra los valores
+        imprimirValores() {
+            this.displayValorActual.textContent = this.valorActual;
+            this.displayValorAnterior.textContent = `${this.valorAnterior}${this.signos[this.tipoOperacion] || ''}`;
+        }
 
-}
+
+
+    }
