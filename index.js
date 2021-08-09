@@ -11,8 +11,8 @@ botonesNumeros.forEach(boton => {
     boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
 });
 
-// en esta se obtine los operadores 
-botonesOperado.forEach(boton => {
-    boton.addEventListener('click', () => display.agregarNumero);
-});
+// // en esta se obtine los operadores 
+// botonesOperado.forEach(boton => {
+//     boton.addEventListener('click', () => display.agregarNumero);
+// });
 
