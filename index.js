@@ -14,8 +14,8 @@ botonesNumeros.forEach(boton => {
 // en esta se obtine los operadores para poderr facilitar ls operaciones se agregan de manera concatenad osea texto
 
 
-botonesOperadores.forEach(boton => {
-    boton.addEventListener('click', () => display.calculo(boton.value))
+botonesOperador.forEach(boton => {
+    boton.addEventListener('click', () => display.Calculo(boton.value))
 });
 // botonesOperado.forEach(boton => {
 //     boton.addEventListener('click', () => display.agregarNumero);

@@ -8,21 +8,23 @@ class Display {
         this.valorAnterior = '';
     }
     // aqui se comienza a realizar los calculos de los toString
-calculo(){
-    const valorAnterior=  parseFloat(this.valorAnterior);
-const  valorActual=  parseFloat(this.displayValorAnterior);
-if (isNaN(valorActual)|| isNaN(valorAnterior)) return;
-this.valorActual= this.Calculador[this.tipoOperacion](valorAnterior, valorActual
-);
-} 
+    calculador() {
+        const valorAnterior = parseFloat(this.valorAnterior);
+        const valorActual = parseFloat(this.displayValorActual);
 
-// borrrrrrrrrrrar borrarTodo es la funcion utilizada para eliminar valores de la pantalla
-borrarTodo(){
-    this.valorActual ="";
-    this.valorAnterior = "";
-    this.tipoOperacion = undefined;
-    this.imprimirValores();
-}
+        // condicion para que no se realicen calculos sin valores
+
+        if (isNaN(valorActual) || isNaN(valorAnterior)) return
+        this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual)
+
+        }
+    // borrrrrrrrrrrar borrarTodo es la funcion utilizada para eliminar valores de la pantalla
+    borrarTodo() {
+        this.valorActual = "";
+        this.valorAnterior = "";
+        this.tipoOperacion = undefined;
+        this.imprimirValores();
+    }
 
 
     // se agrega el valor actual y se  concatena con le anterior 
@@ -35,19 +37,19 @@ borrarTodo(){
     // borrar es la funcion de reducir un valor concatenado no
     // dos notas importantes el valor slience elimina parte de los 
     // string asi que hay que configurarle el parametro a borrrrrr
-    
+
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0, -1);
         this.imprimirValores();
     }
 
 
-        //funcion mostrarlo la pantalla mustra los valores
-        imprimirValores() {
-            this.displayValorActual.textContent = this.valorActual;
-            this.displayValorAnterior.textContent = `${this.valorAnterior}${this.signos[this.tipoOperacion] || ''}`;
-        }
-
-
-
+    //funcion mostrarlo la pantalla mustra los valores
+    imprimirValores() {
+        this.displayValorActual.textContent = this.valorActual;
+        this.displayValorAnterior.textContent = `${this.valorAnterior}${this.signos[this.tipoOperacion] || ''}`;
     }
+
+
+
+}
