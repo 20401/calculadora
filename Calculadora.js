@@ -1,6 +1,6 @@
 //se realizan cualaculos desde las clases
 
-class Calculador {
+class Calculadora {
     sumar(num1, num2) {
         return num1 + num2;
     }
