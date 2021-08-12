@@ -1,23 +1,27 @@
 class Display {
-    constructor(displayValorActual, displayValorAnterior) {
+    constructor(displayValorAnterior, displayValorActual) {
         this.displayValorAnterior = displayValorAnterior;
         this.displayValorActual = displayValorActual;
         this.calculador = new Calculadora();
         this.tipoOperacion = undefined;
         this.valorActual = '';
         this.valorAnterior = '';
+        this.signos = {
+            sumar: '+',
+            dividir: '%',
+            multiplicar: 'x',
+            restar: '-',
+        }
     }
     // aqui se comienza a realizar los calculos de los toString
-    calculador() {
+    calculo() {
         const valorAnterior = parseFloat(this.valorAnterior);
-        const valorActual = parseFloat(this.displayValorActual);
+        const valorActual = parseFloat(this.valorActual);
 
-        // condicion para que no se realicen calculos sin valores
+        if (isNaN(valorActual) || isNaN(valorAnterior)) return;
+        this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual);
+    }
 
-        if (isNaN(valorActual) || isNaN(valorAnterior)) return
-        this.valorActual = this.Calculador[this.tipoOperacion](valorAnterior, valorActual)
-
-        }
     // borrrrrrrrrrrar borrarTodo es la funcion utilizada para eliminar valores de la pantalla
     borrarTodo() {
         this.valorActual = "";
@@ -32,8 +36,19 @@ class Display {
     agregarNumero(numero) {
         if (numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
+        
         this.imprimirValores();
     }
+//funcion que ba a recibir los signos desde el html los cuales son declarados en index.js 
+computar(tipo) {
+    this.tipoOperacion !== 'igual' && this.calcular();
+    this.tipoOperacion = tipo;
+    this.valorAnterior = this.valorActual || this.valorAnterior;
+    this.valorActual = '';
+    this.imprimirValores();
+}
+
+
     // borrar es la funcion de reducir un valor concatenado no
     // dos notas importantes el valor slience elimina parte de los 
     // string asi que hay que configurarle el parametro a borrrrrr
@@ -48,8 +63,5 @@ class Display {
     imprimirValores() {
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior}${this.signos[this.tipoOperacion] || ''}`;
-    }
-
-
-
+      }
 }
