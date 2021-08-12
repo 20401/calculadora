@@ -67,10 +67,10 @@ button:active {
 
 /*ampliacion resultados para una mejor vision */
 
-#valor-act{
-    font-size: 3em;
+#valor-actual{
+    font-size: 2em;
     
 }
-#valor-ant{
-    font-size: 4em;
+#valor-anterior{
+    font-size: 3em;
 }
