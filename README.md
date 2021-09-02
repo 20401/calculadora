@@ -8,7 +8,7 @@
 
 Sentando presedentes puedes darle clikc a la imagen y esta te llevara por un mundo de calculos desde esta calculadora o tambien puedes dar click aqui. 
 
-###https://20401.github.io/calculadora/
+https://20401.github.io/calculadora/
 
 
 
