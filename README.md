@@ -8,6 +8,10 @@
 
 Sentando presedentes puedes darle clikc a la imagen y esta te llevara por un mundo de calculos desde esta calculadora o tambien puedes dar click aqui. 
 
+## Por favor has clic en la imagen de la Calculadora para ver la app. 
+
+### O si quieres dale en el links como quieras.
+
 https://20401.github.io/calculadora/
 
 
